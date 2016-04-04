@@ -1,4 +1,8 @@
 
+<h4>Location: {{fullLocation}}</h4>
+
+<h3>Rentals available in {{city.name}}:</h3>
+
 {{#each city.rentals as |rental|}}
   {{#link-to 'rental' rental.id}}
   <h3>{{rental.owner}}'s {{rental.type}}</h3>
