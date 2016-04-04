@@ -3,7 +3,7 @@
 
 <h3>Rentals available in {{city.name}}:</h3>
 
-{{#each city.rentals as |rental|}}
+{{#each sortedRentals as |rental|}}
   {{#link-to 'rental' rental.id}}
   <h3>{{rental.owner}}'s {{rental.type}}</h3>
   <h4>${{rental.cost}} per night</h4>

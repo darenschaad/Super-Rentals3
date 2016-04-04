@@ -7,6 +7,10 @@ export default Ember.Route.extend({
       rentals: this.store.findAll('rental')
     });
   },
+
+  // sortBy: ['cost:asc'],
+  // sortedRentals: Ember.computed.sort('model.rentals', 'sortBy'),
+
   actions: {
 
     saveCity(params) {
